@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="plan" viewBox="-9.0 -5.0 112.0 86.0" role="img" aria-label="PCB placement, top side: courtyards and designators">
+<title>PCB placement, top side: courtyards and designators</title><style>.board{fill:#DDE6DC;stroke:none}.boardedge{fill:none;stroke:#3D5A49;stroke-width:.35}.tick{stroke:#8A968F;stroke-width:.15}.axis{fill:#5C6964;font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}.axis.dim{fill:#1C2522}.part .cy{stroke-width:.22}.part.top .cy{fill:rgba(184,53,42,.07);stroke:#B8352A}.part.bot .cy{fill:rgba(36,89,184,.09);stroke:#2459B8;stroke-dasharray:.7 .35}.part.prop .cy{stroke-dasharray:1 .5}.part.mh .cy{fill:none}.part .hole{fill:#F2F3EF;stroke:#3D5A49;stroke-width:.15}.des{font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;font-weight:600;pointer-events:none}.part.top .des{fill:#B8352A}.part.bot .des{fill:#2459B8}.part{cursor:pointer}.part:hover .cy,.part.hl .cy{stroke-width:.5}.l1pad{fill:none;stroke:#B8352A;stroke-width:.18;stroke-dasharray:.4 .3}.padno{fill:#B8352A;font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;opacity:.8}.ant{fill:none;stroke:#8A3FA6;stroke-width:.2}.antlbl{fill:#8A3FA6;font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}.hbg{fill:rgba(201,138,18,.10)}.kbg{fill:rgba(138,63,166,.06)}.sbg{fill:transparent}.ped{fill:url(#hatchA);stroke:#B97C0C;stroke-width:.3}.pedlbl{fill:#B97C0C;font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;font-weight:600;letter-spacing:.08em}.keepout{fill:url(#hatchK);stroke:#8A3FA6;stroke-width:.25;stroke-dasharray:1 .5}.zone rect{fill:none;stroke:#6D7B75;stroke-width:.16;stroke-dasharray:.6 .4}.zone text{fill:#6D7B75;font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-style:italic}.loop{fill:none;stroke:#D0306E;stroke-width:.4;stroke-linejoin:round;opacity:.85}.arrhead{fill:#D0306E}.sw{fill:url(#hatchS);stroke:#D0306E;stroke-width:.18}.swlbl{fill:#D0306E;font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:500}.flow{fill:none;stroke:#1F7A5A;stroke-width:.4;stroke-dasharray:1.4 .8;opacity:.9}.arrflow{fill:#1F7A5A}.pour polygon{fill-opacity:.16;stroke-opacity:.7;stroke-width:.15}.pour text{font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;font-weight:600;opacity:.9;pointer-events:none}.ghost .l1pad{stroke:#B8352A;opacity:.85}.role{fill:#2459B8;font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;opacity:.8}.note{fill:#5C6964;font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-style:italic}.des{font-family:Menlo,Consolas,monospace}text{font-family:Helvetica,Arial,sans-serif}</style><defs>
+<pattern id="hatchA" width="1.4" height="1.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.4" height="1.4" class="hbg" /><line x1="0" y1="0" x2="0" y2="1.4" class="hl" /></pattern>
+<pattern id="hatchK" width="1.6" height="1.6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.6" height="1.6" class="kbg" /><line x1="0" y1="0" x2="0" y2="1.6" class="kl" /></pattern>
+<pattern id="hatchS" width="0.8" height="0.8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="0.8" height="0.8" class="sbg" /><line x1="0" y1="0" x2="0" y2="0.8" class="sl" /></pattern>
+<marker id="arr" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="3.2" markerHeight="3.2" orient="auto"><path d="M0,0 L6,3 L0,6 Z" class="arrhead" /></marker>
+<marker id="arrf" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="2.6" markerHeight="2.6" orient="auto"><path d="M0,0 L6,3 L0,6 Z" class="arrflow" /></marker>
+</defs><rect x="-50" y="-50" width="400" height="300" fill="#F2F3EF" />
+<g class="grid"><line class="tick" x1="0" y1="72" x2="0" y2="73.2" /><text class="axis" x="0" y="75.4" text-anchor="middle" font-size="1.8">0</text>
+<line class="tick" x1="10" y1="72" x2="10" y2="73.2" /><text class="axis" x="10" y="75.4" text-anchor="middle" font-size="1.8">10</text>
+<line class="tick" x1="20" y1="72" x2="20" y2="73.2" /><text class="axis" x="20" y="75.4" text-anchor="middle" font-size="1.8">20</text>
+<line class="tick" x1="30" y1="72" x2="30" y2="73.2" /><text class="axis" x="30" y="75.4" text-anchor="middle" font-size="1.8">30</text>
+<line class="tick" x1="40" y1="72" x2="40" y2="73.2" /><text class="axis" x="40" y="75.4" text-anchor="middle" font-size="1.8">40</text>
+<line class="tick" x1="50" y1="72" x2="50" y2="73.2" /><text class="axis" x="50" y="75.4" text-anchor="middle" font-size="1.8">50</text>
+<line class="tick" x1="60" y1="72" x2="60" y2="73.2" /><text class="axis" x="60" y="75.4" text-anchor="middle" font-size="1.8">60</text>
+<line class="tick" x1="70" y1="72" x2="70" y2="73.2" /><text class="axis" x="70" y="75.4" text-anchor="middle" font-size="1.8">70</text>
+<line class="tick" x1="80" y1="72" x2="80" y2="73.2" /><text class="axis" x="80" y="75.4" text-anchor="middle" font-size="1.8">80</text>
+<line class="tick" x1="90" y1="72" x2="90" y2="73.2" /><text class="axis" x="90" y="75.4" text-anchor="middle" font-size="1.8">90</text>
+<line class="tick" x1="-1.2" y1="72" x2="0" y2="72" /><text class="axis" x="-2" y="72" text-anchor="end" dominant-baseline="central" font-size="1.8">0</text>
+<line class="tick" x1="-1.2" y1="62" x2="0" y2="62" /><text class="axis" x="-2" y="62" text-anchor="end" dominant-baseline="central" font-size="1.8">10</text>
+<line class="tick" x1="-1.2" y1="52" x2="0" y2="52" /><text class="axis" x="-2" y="52" text-anchor="end" dominant-baseline="central" font-size="1.8">20</text>
+<line class="tick" x1="-1.2" y1="42" x2="0" y2="42" /><text class="axis" x="-2" y="42" text-anchor="end" dominant-baseline="central" font-size="1.8">30</text>
+<line class="tick" x1="-1.2" y1="32" x2="0" y2="32" /><text class="axis" x="-2" y="32" text-anchor="end" dominant-baseline="central" font-size="1.8">40</text>
+<line class="tick" x1="-1.2" y1="22" x2="0" y2="22" /><text class="axis" x="-2" y="22" text-anchor="end" dominant-baseline="central" font-size="1.8">50</text>
+<line class="tick" x1="-1.2" y1="12" x2="0" y2="12" /><text class="axis" x="-2" y="12" text-anchor="end" dominant-baseline="central" font-size="1.8">60</text>
+<line class="tick" x1="-1.2" y1="2" x2="0" y2="2" /><text class="axis" x="-2" y="2" text-anchor="end" dominant-baseline="central" font-size="1.8">70</text>
+<text class="axis dim" x="49" y="79" text-anchor="middle" font-size="2">98 mm</text>
+<text class="axis dim" x="-6.6" y="36" text-anchor="middle" font-size="2" transform="rotate(-90 -6.6 36)">72 mm</text></g>
+<path class="board" d="M4.5,72 L93.5,72 A4.5,4.5 0 0 0 98,67.5 L98,4.5 A4.5,4.5 0 0 0 93.5,0 L33,0 A1,1 0 0 0 32,1 L32,5.1 A1,1 0 0 1 31,6.1 L17,6.1 A1,1 0 0 1 16,5.1 L16,1 A1,1 0 0 0 15,0 L4.5,0 A4.5,4.5 0 0 0 0,4.5 L0,67.5 A4.5,4.5 0 0 0 4.5,72 Z" />
+<g class="lyr-top">
+<g class="part top" data-ref="J1">
+<rect class="cy" x="87.44" y="16.94" width="10.12" height="10.12" />
+<text class="des" x="92.5" y="22" font-size="3" dominant-baseline="central" text-anchor="middle">J1</text>
+</g>
+<g class="part top" data-ref="J2">
+<rect class="cy" x="87.44" y="50.94" width="10.12" height="10.12" />
+<text class="des" x="92.5" y="56" font-size="3" dominant-baseline="central" text-anchor="middle">J2</text>
+</g>
+<g class="part top" data-ref="J3">
+<rect class="cy" x="-0.55" y="42.9" width="8.43" height="10.2" />
+<text class="des" x="3.67" y="48" font-size="3" dominant-baseline="central" text-anchor="middle">J3</text>
+</g>
+<g class="part top" data-ref="L1">
+<rect class="cy" x="46.85" y="32.75" width="22.3" height="22.5" />
+<text class="des" x="58" y="44" font-size="3" dominant-baseline="central" text-anchor="middle">L1</text>
+</g>
+<g class="part top" data-ref="C11">
+<rect class="cy" x="32.35" y="26.1" width="13.3" height="10.8" />
+<text class="des" x="39" y="31.5" font-size="3" dominant-baseline="central" text-anchor="middle">C11</text>
+</g>
+<g class="part top" data-ref="C1">
+<rect class="cy" x="32.6" y="39.35" width="10.8" height="13.3" />
+<text class="des" x="38" y="46" font-size="3" dominant-baseline="central" text-anchor="middle">C1</text>
+</g>
+<g class="part top" data-ref="C2">
+<rect class="cy" x="32.6" y="52.85" width="10.8" height="13.3" />
+<text class="des" x="38" y="59.5" font-size="3" dominant-baseline="central" text-anchor="middle">C2</text>
+</g>
+<g class="part top" data-ref="C18">
+<rect class="cy" x="70.1" y="51.85" width="10.8" height="13.3" />
+<text class="des" x="75.5" y="58.5" font-size="3" dominant-baseline="central" text-anchor="middle">C18</text>
+</g>
+<g class="part top" data-ref="C19">
+<rect class="cy" x="72.85" y="39.1" width="13.3" height="10.8" />
+<text class="des" x="79.5" y="44.5" font-size="3" dominant-baseline="central" text-anchor="middle">C19</text>
+</g>
+<g class="part top" data-ref="F1">
+<rect class="cy" x="72.14" y="22.2" width="13.72" height="4.6" />
+<text class="des" x="79" y="24.5" font-size="2.12" dominant-baseline="central" text-anchor="middle">F1</text>
+</g>
+<g class="part top" data-ref="D1">
+<rect class="cy" x="76.85" y="16.95" width="6.3" height="4.1" />
+<text class="des" x="80" y="19" font-size="1.89" dominant-baseline="central" text-anchor="middle">D1</text>
+</g>
+<g class="part top" data-ref="D2">
+<rect class="cy" x="81.95" y="32.65" width="4.1" height="6.3" />
+<text class="des" x="84" y="35.8" font-size="1.89" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 84 35.8)">D2</text>
+</g>
+<g class="part top" data-ref="D9">
+<rect class="cy" x="7.85" y="36.95" width="6.3" height="4.1" />
+<text class="des" x="11" y="39" font-size="1.89" dominant-baseline="central" text-anchor="middle">D9</text>
+</g>
+<g class="part top" data-ref="U5">
+<rect class="cy" x="9.05" y="46.05" width="3.9" height="3.9" />
+<text class="des" x="11" y="48" font-size="1.79" dominant-baseline="central" text-anchor="middle">U5</text>
+</g>
+<g class="part top" data-ref="U4">
+<rect class="cy" x="14.35" y="49.35" width="5.3" height="5.3" />
+<text class="des" x="17" y="52" font-size="2.44" dominant-baseline="central" text-anchor="middle">U4</text>
+</g>
+<g class="part top" data-ref="U3">
+<rect class="cy" x="14.25" y="58.28" width="5.5" height="7.44" />
+<text class="des" x="17" y="62" font-size="2.53" dominant-baseline="central" text-anchor="middle">U3</text>
+</g>
+<g class="part top" data-ref="Q7">
+<rect class="cy" x="14.75" y="37.05" width="4.4" height="3.9" />
+<text class="des" x="16.95" y="39" font-size="1.79" dominant-baseline="central" text-anchor="middle">Q7</text>
+</g>
+<g class="part top" data-ref="Q8">
+<rect class="cy" x="19.85" y="37.05" width="4.4" height="3.9" />
+<text class="des" x="22.05" y="39" font-size="1.79" dominant-baseline="central" text-anchor="middle">Q8</text>
+</g>
+<g class="part top" data-ref="U6">
+<rect class="cy" x="18.15" y="30.83" width="3.7" height="4.34" />
+<text class="des" x="20" y="33" font-size="1.7" dominant-baseline="central" text-anchor="middle">U6</text>
+</g>
+<g class="part top" data-ref="R7">
+<rect class="cy" x="24.45" y="36.5" width="7.1" height="5" />
+<text class="des" x="28" y="39" font-size="2.3" dominant-baseline="central" text-anchor="middle">R7</text>
+</g>
+<g class="part top" data-ref="U8">
+<rect class="cy" x="23.85" y="44.25" width="6.3" height="3.5" />
+<text class="des" x="27" y="46" font-size="1.61" dominant-baseline="central" text-anchor="middle">U8</text>
+</g>
+<g class="part top" data-ref="U7">
+<rect class="cy" x="81.05" y="52.75" width="6.3" height="3.5" />
+<text class="des" x="84.2" y="54.5" font-size="1.61" dominant-baseline="central" text-anchor="middle">U7</text>
+</g>
+<g class="part top" data-ref="R5">
+<rect class="cy" x="70.27" y="42.65" width="1.45" height="2.7" />
+<text class="des" x="71" y="44" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 71 44)">R5</text>
+</g>
+<g class="part top" data-ref="U9">
+<rect class="cy" x="16.95" y="0.25" width="14.1" height="17.5" />
+<text class="des" x="24" y="9" font-size="3" dominant-baseline="central" text-anchor="middle">U9</text>
+</g>
+<g class="part top" data-ref="PN1">
+<rect class="cy" x="37.25" y="12.23" width="6.58" height="3.54" />
+<text class="des" x="40.54" y="14" font-size="1.63" dominant-baseline="central" text-anchor="middle">PN1</text>
+</g>
+<g class="part top" data-ref="D10">
+<rect class="cy" x="56.85" y="7.5" width="6.3" height="3" />
+<text class="des" x="60" y="9" font-size="1.38" dominant-baseline="central" text-anchor="middle">D10</text>
+</g>
+<g class="part top" data-ref="D11">
+<rect class="cy" x="56.85" y="11.5" width="6.3" height="3" />
+<text class="des" x="60" y="13" font-size="1.38" dominant-baseline="central" text-anchor="middle">D11</text>
+</g>
+<g class="part top" data-ref="U10">
+<rect class="cy" x="66.8" y="8.3" width="4.4" height="5.2" />
+<text class="des" x="69" y="10.9" font-size="2.02" dominant-baseline="central" text-anchor="middle">U10</text>
+</g>
+<g class="part top" data-ref="U11">
+<rect class="cy" x="74.89" y="9.3" width="4.22" height="3.4" />
+<text class="des" x="77" y="11" font-size="1.56" dominant-baseline="central" text-anchor="middle">U11</text>
+</g>
+<g class="part top mh" data-ref="MH1">
+<circle class="cy" cx="4.5" cy="67.5" r="3.95" />
+<circle class="hole" cx="4.5" cy="67.5" r="1.65" />
+<text class="des" x="4.5" y="70.25" font-size="1.3" text-anchor="middle" dominant-baseline="central">MH1</text>
+</g>
+<g class="part top mh" data-ref="MH2">
+<circle class="cy" cx="93.5" cy="67.5" r="3.95" />
+<circle class="hole" cx="93.5" cy="67.5" r="1.65" />
+<text class="des" x="93.5" y="70.25" font-size="1.3" text-anchor="middle" dominant-baseline="central">MH2</text>
+</g>
+<g class="part top mh" data-ref="MH3">
+<circle class="cy" cx="4.5" cy="4.5" r="3.95" />
+<circle class="hole" cx="4.5" cy="4.5" r="1.65" />
+<text class="des" x="4.5" y="7.25" font-size="1.3" text-anchor="middle" dominant-baseline="central">MH3</text>
+</g>
+<g class="part top mh" data-ref="MH4">
+<circle class="cy" cx="93.5" cy="4.5" r="3.95" />
+<circle class="hole" cx="93.5" cy="4.5" r="1.65" />
+<text class="des" x="93.5" y="7.25" font-size="1.3" text-anchor="middle" dominant-baseline="central">MH4</text>
+</g>
+<g class="part top mh" data-ref="MH5">
+<circle class="cy" cx="58" cy="66.5" r="3.95" />
+<circle class="hole" cx="58" cy="66.5" r="1.65" />
+<text class="des" x="58" y="69.25" font-size="1.3" text-anchor="middle" dominant-baseline="central">MH5</text>
+</g>
+<g class="part top mh" data-ref="MH6">
+<circle class="cy" cx="66" cy="27" r="3.95" />
+<circle class="hole" cx="66" cy="27" r="1.65" />
+<text class="des" x="66" y="29.75" font-size="1.3" text-anchor="middle" dominant-baseline="central">MH6</text>
+</g>
+<g class="l1pads"><rect class="l1pad" x="51" y="50" width="5" height="5" /><text class="padno" x="53.5" y="52.5" font-size="1.6" dominant-baseline="central" text-anchor="middle">1</text><rect class="l1pad" x="60" y="50" width="5" height="5" /><text class="padno" x="62.5" y="52.5" font-size="1.6" dominant-baseline="central" text-anchor="middle">2</text><rect class="l1pad" x="55.5" y="33" width="5" height="5" /><text class="padno" x="58" y="35.5" font-size="1.6" dominant-baseline="central" text-anchor="middle">3</text></g>
+<rect class="ant" x="17.4" y="0.7" width="13.2" height="5.4" /><text class="antlbl" x="24" y="3.4" font-size="1.3" text-anchor="middle" dominant-baseline="central">PCB antenna</text>
+</g>
+</svg>

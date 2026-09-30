@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="960" height="400" role="img" aria-label="Block diagram: battery, protection, GaN buck-boost power stage, VBUS switch and USB-C, with the BQ25756, TPS26750A, TPD4S480, ESP32-C6 and INA228s">
+<title>Block diagram</title>
+<defs><marker id="ap" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#3987e5"/></marker><marker id="as" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6e7681"/></marker></defs>
+<rect x="16" y="50" width="102" height="76" rx="6" fill="#0f1f33" stroke="#3987e5" stroke-width="1.5"/>
+<text x="67.0" y="85.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f0f6fc" text-anchor="middle">Battery</text>
+<text x="67.0" y="101.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12"  fill="#9198a1" text-anchor="middle">10–58.4 V</text>
+<rect x="160" y="50" width="170" height="76" rx="6" fill="#0f1f33" stroke="#3987e5" stroke-width="1.5"/>
+<text x="245.0" y="77.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f0f6fc" text-anchor="middle">Protection</text>
+<text x="245.0" y="93.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12"  fill="#9198a1" text-anchor="middle">30 A fuse, LTC4368-1</text>
+<text x="245.0" y="109.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12"  fill="#9198a1" text-anchor="middle">reverse, UV/OV, breaker</text>
+<rect x="374" y="24" width="290" height="128" rx="8" fill="none" stroke="#3d444d" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="519" y="42" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#9198a1" text-anchor="middle">Four-switch buck-boost, 250 kHz</text>
+<rect x="386" y="58" width="88" height="60" rx="6" fill="#0f1f33" stroke="#3987e5" stroke-width="1.5"/>
+<text x="430.0" y="85.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f0f6fc" text-anchor="middle">Leg B</text>
+<text x="430.0" y="101.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12"  fill="#9198a1" text-anchor="middle">2× EPC2302</text>
+<rect x="492" y="58" width="48" height="60" rx="6" fill="#0f1f33" stroke="#3987e5" stroke-width="1.5"/>
+<text x="516.0" y="85.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f0f6fc" text-anchor="middle">L</text>
+<text x="516.0" y="101.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12"  fill="#9198a1" text-anchor="middle">7 µH</text>
+<rect x="558" y="58" width="88" height="60" rx="6" fill="#0f1f33" stroke="#3987e5" stroke-width="1.5"/>
+<text x="602.0" y="85.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f0f6fc" text-anchor="middle">Leg A</text>
+<text x="602.0" y="101.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12"  fill="#9198a1" text-anchor="middle">2× EPC2302</text>
+<rect x="700" y="50" width="102" height="76" rx="6" fill="#0f1f33" stroke="#3987e5" stroke-width="1.5"/>
+<text x="751.0" y="85.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f0f6fc" text-anchor="middle">VBUS switch</text>
+<text x="751.0" y="101.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12"  fill="#9198a1" text-anchor="middle">LM74502H</text>
+<rect x="844" y="50" width="100" height="76" rx="6" fill="#0f1f33" stroke="#3987e5" stroke-width="1.5"/>
+<text x="894.0" y="85.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f0f6fc" text-anchor="middle">USB-C</text>
+<text x="894.0" y="101.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12"  fill="#9198a1" text-anchor="middle">48 V · 5 A</text>
+<line x1="121" y1="88.0" x2="157" y2="88.0" stroke="#3987e5" stroke-width="2.5" marker-start="url(#ap)" marker-end="url(#ap)"/>
+<line x1="333" y1="88.0" x2="383" y2="88.0" stroke="#3987e5" stroke-width="2.5" marker-start="url(#ap)" marker-end="url(#ap)"/>
+<line x1="474" y1="88.0" x2="492" y2="88.0" stroke="#3987e5" stroke-width="2.5"/>
+<line x1="540" y1="88.0" x2="558" y2="88.0" stroke="#3987e5" stroke-width="2.5"/>
+<line x1="649" y1="88.0" x2="697" y2="88.0" stroke="#3987e5" stroke-width="2.5" marker-start="url(#ap)" marker-end="url(#ap)"/>
+<line x1="805" y1="88.0" x2="841" y2="88.0" stroke="#3987e5" stroke-width="2.5" marker-start="url(#ap)" marker-end="url(#ap)"/>
+<text x="480" y="386" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#9198a1" text-anchor="middle">Blue: 240 W power path, either direction · grey: control and monitoring</text>
+<rect x="410" y="200" width="210" height="60" rx="6" fill="#151b23" stroke="#6e7681" stroke-width="1.5"/>
+<text x="515.0" y="227.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f0f6fc" text-anchor="middle">BQ25756</text>
+<text x="515.0" y="243.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12"  fill="#9198a1" text-anchor="middle">buck-boost controller</text>
+<rect x="690" y="200" width="140" height="60" rx="6" fill="#151b23" stroke="#6e7681" stroke-width="1.5"/>
+<text x="760.0" y="227.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f0f6fc" text-anchor="middle">TPS26750A</text>
+<text x="760.0" y="243.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12"  fill="#9198a1" text-anchor="middle">PD 3.2 EPR, dual-role</text>
+<rect x="850" y="200" width="94" height="60" rx="6" fill="#151b23" stroke="#6e7681" stroke-width="1.5"/>
+<text x="897.0" y="227.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f0f6fc" text-anchor="middle">TPD4S480</text>
+<text x="897.0" y="243.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12"  fill="#9198a1" text-anchor="middle">port protection</text>
+<polyline points="430,200 430,118" fill="none" stroke="#6e7681" stroke-width="1.5" stroke-dasharray="5 4"  marker-end="url(#as)"/>
+<text x="422" y="172" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" fill="#9198a1" text-anchor="end">gate drive</text>
+<polyline points="602,200 602,118" fill="none" stroke="#6e7681" stroke-width="1.5" stroke-dasharray="5 4"  marker-end="url(#as)"/>
+<text x="610" y="172" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" fill="#9198a1" text-anchor="start">gate drive</text>
+<polyline points="690,230 620,230" fill="none" stroke="#6e7681" stroke-width="1.5"   marker-end="url(#as)"/>
+<text x="655" y="222" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" fill="#9198a1" text-anchor="middle">I²C</text>
+<text x="655" y="246" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" fill="#9198a1" text-anchor="middle">sets V, I</text>
+<polyline points="894,200 894,126" fill="none" stroke="#6e7681" stroke-width="1.5"   />
+<polyline points="850,230 830,230" fill="none" stroke="#6e7681" stroke-width="1.5"   />
+<text x="902" y="162" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" fill="#9198a1">CC</text>
+<rect x="160" y="300" width="170" height="56" rx="6" fill="#151b23" stroke="#6e7681" stroke-width="1.5"/>
+<text x="245.0" y="325.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f0f6fc" text-anchor="middle">2× INA228</text>
+<text x="245.0" y="341.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12"  fill="#9198a1" text-anchor="middle">battery and USB power</text>
+<rect x="690" y="300" width="140" height="56" rx="6" fill="#151b23" stroke="#6e7681" stroke-width="1.5"/>
+<text x="760.0" y="325.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f0f6fc" text-anchor="middle">ESP32-C6</text>
+<text x="760.0" y="341.0" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12"  fill="#9198a1" text-anchor="middle">ESPHome over Wi-Fi</text>
+<polyline points="245,300 245,188 673,188" fill="none" stroke="#6e7681" stroke-width="1.5" stroke-dasharray="5 4"  />
+<polyline points="352,188 352,93.0" fill="none" stroke="#6e7681" stroke-width="1.5" stroke-dasharray="5 4"  />
+<polyline points="673,188 673,93.0" fill="none" stroke="#6e7681" stroke-width="1.5" stroke-dasharray="5 4"  />
+<circle cx="352" cy="93.0" r="3" fill="#6e7681"/>
+<circle cx="673" cy="93.0" r="3" fill="#6e7681"/>
+<text x="253" y="250" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" fill="#9198a1">current sense</text>
+<polyline points="690,328 330,328" fill="none" stroke="#6e7681" stroke-width="1.5"   marker-end="url(#as)"/>
+<text x="420" y="320" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" fill="#9198a1" text-anchor="middle">I²C</text>
+<polyline points="760,300 760,260" fill="none" stroke="#6e7681" stroke-width="1.5"   marker-end="url(#as)"/>
+<text x="768" y="286" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" fill="#9198a1" text-anchor="start">I²C: PD status</text>
+<polyline points="515,260 515,346 690,346" fill="none" stroke="#6e7681" stroke-width="1.5" stroke-dasharray="5 4"  marker-end="url(#as)"/>
+<text x="600" y="362" font-family="system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" fill="#9198a1" text-anchor="middle">status</text>
+</svg>

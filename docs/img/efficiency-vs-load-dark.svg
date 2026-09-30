@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" aria-label="Efficiency vs output power, battery to USB-C at 48 V">
+<title>Efficiency vs output power, battery to USB-C at 48 V</title>
+<style>text{font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}</style>
+<text x="56" y="26" font-size="16" font-weight="600" fill="#f0f6fc">Efficiency vs output power, battery to USB-C at 48 V</text>
+<text x="56" y="46" font-size="12.5" fill="#c9d1d9">Calculated. Includes battery protection, current sensing, the VBUS switch and 0.6 W housekeeping.</text>
+<line x1="56" y1="61" x2="72" y2="61" stroke="#3987e5" stroke-width="2.5" stroke-linecap="round"/>
+<text x="78" y="65" font-size="12" fill="#c9d1d9">12.8 V battery</text>
+<line x1="200.8" y1="61" x2="216.8" y2="61" stroke="#d95926" stroke-width="2.5" stroke-linecap="round"/>
+<text x="222.8" y="65" font-size="12" fill="#c9d1d9">25.6 V battery</text>
+<line x1="345.6" y1="61" x2="361.6" y2="61" stroke="#199e70" stroke-width="2.5" stroke-linecap="round"/>
+<text x="367.6" y="65" font-size="12" fill="#c9d1d9">51.2 V battery</text>
+<line x1="56" y1="368.0" x2="610" y2="368.0" stroke="#21262d" stroke-width="1"/>
+<text x="48" y="372.0" font-size="11.5" text-anchor="end" fill="#8b949e" style="font-variant-numeric:tabular-nums">94 %</text>
+<line x1="56" y1="319.0" x2="610" y2="319.0" stroke="#21262d" stroke-width="1"/>
+<text x="48" y="323.0" font-size="11.5" text-anchor="end" fill="#8b949e" style="font-variant-numeric:tabular-nums">95 %</text>
+<line x1="56" y1="270.0" x2="610" y2="270.0" stroke="#21262d" stroke-width="1"/>
+<text x="48" y="274.0" font-size="11.5" text-anchor="end" fill="#8b949e" style="font-variant-numeric:tabular-nums">96 %</text>
+<line x1="56" y1="221.0" x2="610" y2="221.0" stroke="#21262d" stroke-width="1"/>
+<text x="48" y="225.0" font-size="11.5" text-anchor="end" fill="#8b949e" style="font-variant-numeric:tabular-nums">97 %</text>
+<line x1="56" y1="172.0" x2="610" y2="172.0" stroke="#21262d" stroke-width="1"/>
+<text x="48" y="176.0" font-size="11.5" text-anchor="end" fill="#8b949e" style="font-variant-numeric:tabular-nums">98 %</text>
+<line x1="56" y1="123.0" x2="610" y2="123.0" stroke="#21262d" stroke-width="1"/>
+<text x="48" y="127.0" font-size="11.5" text-anchor="end" fill="#8b949e" style="font-variant-numeric:tabular-nums">99 %</text>
+<line x1="56" y1="74.0" x2="610" y2="74.0" stroke="#21262d" stroke-width="1"/>
+<text x="48" y="78.0" font-size="11.5" text-anchor="end" fill="#8b949e" style="font-variant-numeric:tabular-nums">100 %</text>
+<text x="56.0" y="386" font-size="11.5" text-anchor="middle" fill="#8b949e" style="font-variant-numeric:tabular-nums">100</text>
+<text x="135.1" y="386" font-size="11.5" text-anchor="middle" fill="#8b949e" style="font-variant-numeric:tabular-nums">120</text>
+<text x="214.3" y="386" font-size="11.5" text-anchor="middle" fill="#8b949e" style="font-variant-numeric:tabular-nums">140</text>
+<text x="293.4" y="386" font-size="11.5" text-anchor="middle" fill="#8b949e" style="font-variant-numeric:tabular-nums">160</text>
+<text x="372.6" y="386" font-size="11.5" text-anchor="middle" fill="#8b949e" style="font-variant-numeric:tabular-nums">180</text>
+<text x="451.7" y="386" font-size="11.5" text-anchor="middle" fill="#8b949e" style="font-variant-numeric:tabular-nums">200</text>
+<text x="530.9" y="386" font-size="11.5" text-anchor="middle" fill="#8b949e" style="font-variant-numeric:tabular-nums">220</text>
+<text x="610.0" y="386" font-size="11.5" text-anchor="middle" fill="#8b949e" style="font-variant-numeric:tabular-nums">240</text>
+<line x1="56" y1="368" x2="610" y2="368" stroke="#3d444d" stroke-width="1"/>
+<text x="333.0" y="410" font-size="12" text-anchor="middle" fill="#c9d1d9">Output power (W)</text>
+<polyline fill="none" stroke="#3987e5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="56.0,272.9 75.8,272.9 95.6,272.9 115.4,273.9 135.1,274.4 154.9,275.9 174.7,277.4 194.5,278.8 214.3,280.8 234.1,282.7 253.9,284.7 273.6,287.1 293.4,289.6 313.2,292.1 333.0,294.5 352.8,296.9 372.6,299.9 392.4,302.8 412.1,305.8 431.9,308.7 451.7,312.1 471.5,315.1 491.3,318.5 511.1,321.4 530.9,324.9 550.6,328.3 570.4,331.7 590.2,335.2 610.0,339.1"/>
+<polyline fill="none" stroke="#d95926" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="56.0,205.8 75.8,202.9 95.6,200.4 115.4,198.0 135.1,195.5 154.9,194.1 174.7,192.6 194.5,191.1 214.3,189.6 234.1,188.7 253.9,187.7 273.6,187.2 293.4,186.2 313.2,185.7 333.0,185.2 352.8,185.2 372.6,184.7 392.4,184.7 412.1,184.2 431.9,184.2 451.7,184.2 471.5,184.7 491.3,184.7 511.1,184.7 530.9,185.2 550.6,185.2 570.4,185.7 590.2,186.2 610.0,186.2"/>
+<polyline fill="none" stroke="#199e70" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="56.0,178.9 75.8,175.4 95.6,172.5 115.4,169.6 135.1,167.1 154.9,164.6 174.7,162.7 194.5,160.7 214.3,158.8 234.1,157.3 253.9,155.8 273.6,154.4 293.4,152.9 313.2,151.9 333.0,150.9 352.8,149.9 372.6,149.0 392.4,148.5 412.1,147.5 431.9,147.0 451.7,146.5 471.5,145.5 491.3,145.1 511.1,144.6 530.9,144.6 550.6,144.1 570.4,143.6 590.2,143.1 610.0,143.1"/>
+<circle cx="610.0" cy="143.1" r="4" fill="#199e70" stroke="#0d1117" stroke-width="2"/>
+<text x="632.0" y="141.1" font-size="12" font-weight="600" fill="#f0f6fc">98.6 %</text>
+<text x="632.0" y="155.1" font-size="11" fill="#c9d1d9">51.2 V battery</text>
+<circle cx="610.0" cy="186.2" r="4" fill="#d95926" stroke="#0d1117" stroke-width="2"/>
+<text x="632.0" y="184.2" font-size="12" font-weight="600" fill="#f0f6fc">97.7 %</text>
+<text x="632.0" y="198.2" font-size="11" fill="#c9d1d9">25.6 V battery</text>
+<circle cx="610.0" cy="339.1" r="4" fill="#3987e5" stroke="#0d1117" stroke-width="2"/>
+<text x="632.0" y="337.1" font-size="12" font-weight="600" fill="#f0f6fc">94.6 %</text>
+<text x="632.0" y="351.1" font-size="11" fill="#c9d1d9">12.8 V battery</text>
+</svg>

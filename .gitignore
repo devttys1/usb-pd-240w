@@ -1,0 +1,12 @@
+.DS_Store
+# Altium
+__Previews/
+History/
+Project Logs for */
+Project Outputs for */
+*.PrjPcbStructure
+*.SchDocPreview
+*.PcbDocPreview
+# ESPHome
+esphome/secrets.yaml
+esphome/.esphome/

@@ -1,0 +1,212 @@
+# Board: usb-pd-240w (ESP32-C6-MINI-1-N4)
+# Bidirectional battery <-> USB-C PD 3.1 EPR converter, BQ25756 + TPS26750A.
+#
+# The ESP32 is a monitor, not the power-path controller: the TPS26750A owns the
+# BQ25756 over its own I2C controller bus (multi-controller not supported there),
+# so everything here reads its own bus (INA228 x2, TPS26750A target port) and the
+# BQ25756 open-drain status pins. GPIO numbers follow docs/PLAN.md 5.4 and must be
+# re-checked against the schematic once it is captured.
+
+substitutions:
+  name: usb-pd-240w
+  friendly_name: "USB-PD 240W"
+  # Shunts shared with the BQ25756 sense inputs (RBAT_SNS / RAC_SNS)
+  bat_shunt: 0.005 ohm
+  usb_shunt: 0.005 ohm
+
+esphome:
+  name: ${name}
+  friendly_name: ${friendly_name}
+
+esp32:
+  variant: esp32c6
+  flash_size: 4MB
+  framework:
+    type: esp-idf
+
+logger:
+  level: INFO
+
+api:
+  encryption:
+    key: !secret usb_pd_240w_api_key
+
+ota:
+  - platform: esphome
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: ${name} Fallback Hotspot
+    password: !secret fallback_ap_password
+
+captive_portal:
+
+i2c:
+  - id: bus_mon
+    sda: GPIO22
+    scl: GPIO23
+    frequency: 400kHz
+    scan: true
+
+# --- TPS26750A host interface (PD contract, partner capabilities) -----------
+# Planned external component (docs/PLAN.md milestone M5). Until it exists the
+# I2Ct_IRQ line is exposed as a binary sensor so PD events are still visible.
+# external_components:
+#   - source: { type: local, path: components }
+# tps26750:
+#   i2c_id: bus_mon
+#   address: 0x20
+#   power_role: { name: "USB-C power role" }
+#   contract_voltage: { name: "USB-C contract voltage" }
+#   contract_current: { name: "USB-C contract current" }
+#   partner: { name: "USB-C partner" }
+
+sensor:
+  # Battery side: INA228 across RBAT_SNS. Positive current = charging the battery.
+  - platform: ina2xx_i2c
+    i2c_id: bus_mon
+    model: INA228
+    address: 0x40
+    shunt_resistance: ${bat_shunt}
+    max_current: 30 A
+    adc_range: 0
+    adc_averaging: 128
+    update_interval: 2s
+    bus_voltage:
+      id: v_bat
+      name: "Battery voltage"
+    current:
+      id: i_bat
+      name: "Battery current"
+    power:
+      id: p_bat
+      name: "Battery power"
+    energy:
+      name: "Battery energy"
+    charge:
+      name: "Battery charge"
+    temperature:
+      name: "Battery monitor temperature"
+
+  # USB side: INA228 across RAC_SNS. Positive current = power drawn from USB-C (charging).
+  - platform: ina2xx_i2c
+    i2c_id: bus_mon
+    model: INA228
+    address: 0x41
+    shunt_resistance: ${usb_shunt}
+    max_current: 7 A
+    adc_range: 1
+    adc_averaging: 128
+    update_interval: 2s
+    bus_voltage:
+      id: v_usb
+      name: "USB-C voltage"
+    current:
+      id: i_usb
+      name: "USB-C current"
+    power:
+      id: p_usb
+      name: "USB-C power"
+    energy:
+      name: "USB-C energy"
+
+  # Board NTCs (NTCS0603E3103FMT, 10k B3610) on ADC1, 10k pull-ups to 3V3
+  - platform: adc
+    id: ntc_fet_v
+    pin: GPIO0
+    attenuation: 12db
+    update_interval: 5s
+  - platform: resistance
+    id: ntc_fet_r
+    sensor: ntc_fet_v
+    configuration: DOWNSTREAM
+    resistor: 10kOhm
+  - platform: ntc
+    sensor: ntc_fet_r
+    name: "GaN FET temperature"
+    calibration:
+      b_constant: 3610
+      reference_temperature: 25°C
+      reference_resistance: 10kOhm
+  - platform: adc
+    id: ntc_ind_v
+    pin: GPIO1
+    attenuation: 12db
+    update_interval: 5s
+  - platform: resistance
+    id: ntc_ind_r
+    sensor: ntc_ind_v
+    configuration: DOWNSTREAM
+    resistor: 10kOhm
+  - platform: ntc
+    sensor: ntc_ind_r
+    name: "Inductor temperature"
+    calibration:
+      b_constant: 3610
+      reference_temperature: 25°C
+      reference_resistance: 10kOhm
+
+  # Derived
+  - platform: template
+    name: "Conversion efficiency"
+    unit_of_measurement: "%"
+    accuracy_decimals: 1
+    update_interval: 5s
+    lambda: |-
+      const float pb = id(p_bat).state, pu = id(p_usb).state;
+      if (isnan(pb) || isnan(pu) || (pb < 2.0f && pu < 2.0f)) return NAN;
+      // charging: USB in, battery out; sourcing: battery in, USB out
+      const bool charging = id(i_bat).state > 0;
+      const float pin = charging ? pu : pb, pout = charging ? pb : pu;
+      return pin > 0 ? 100.0f * pout / pin : NAN;
+
+text_sensor:
+  - platform: template
+    name: "Power direction"
+    update_interval: 5s
+    lambda: |-
+      const float i = id(i_bat).state;
+      if (isnan(i) || fabsf(i) < 0.05f) return {"idle"};
+      return {i > 0 ? "charging battery from USB-C" : "powering USB-C from battery"};
+
+binary_sensor:
+  - platform: gpio
+    name: "Charger STAT1"
+    pin: { number: GPIO18, inverted: true, mode: { input: true } }
+  - platform: gpio
+    name: "Charger STAT2"
+    pin: { number: GPIO19, inverted: true, mode: { input: true } }
+  - platform: gpio
+    name: "USB-C input power good"
+    pin: { number: GPIO20, inverted: true, mode: { input: true } }
+  - platform: gpio
+    name: "Battery protection fault"
+    pin: { number: GPIO3, inverted: true, mode: { input: true } }
+    device_class: problem
+  - platform: gpio
+    name: "USB-C port protection fault"
+    pin: { number: GPIO2, inverted: true, mode: { input: true } }
+    device_class: problem
+  - platform: gpio
+    name: "PD controller event"
+    pin: { number: GPIO21, inverted: true, mode: { input: true } }
+  - platform: gpio
+    name: "Button"
+    # BOOT strap: the button only pulls low when pressed, so the pin is high at reset
+    pin: { number: GPIO9, inverted: true, mode: { input: true, pullup: true }, ignore_strapping_warning: true }
+
+switch:
+  # Drives BQ25756 CE high through a resistor: inhibits charging in hardware
+  # regardless of what the PD controller requests. Off (charging allowed) at boot.
+  - platform: gpio
+    name: "Inhibit battery charging"
+    pin: GPIO14
+    restore_mode: ALWAYS_OFF
+
+light:
+  - platform: status_led
+    name: "Status LED"
+    # GPIO8 strap must be high at reset: the LED is wired to 3V3 (active low), which holds it high
+    pin: { number: GPIO8, inverted: true, ignore_strapping_warning: true }

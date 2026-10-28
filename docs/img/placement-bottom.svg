@@ -58,6 +58,10 @@
 <circle class="hole" cx="4.5" cy="67.5" r="1.65" />
 <text class="des" x="4.5" y="70.25" font-size="1.3" text-anchor="middle" dominant-baseline="central">MH1</text>
 </g>
+<g class="part bot" data-ref="U7">
+<rect class="cy" x="68.65" y="36.85" width="3.5" height="6.3" />
+<text class="des" x="70.4" y="40" font-size="1.61" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 70.4 40)">U7</text>
+</g>
 <g class="part bot" data-ref="Q3">
 <rect class="cy" x="48.55" y="52.5" width="3.9" height="6.1" />
 <text class="des" x="50.5" y="55.55" font-size="1.79" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 50.5 55.55)">Q3</text>
@@ -75,19 +79,19 @@
 <text class="des" x="65.5" y="55.55" font-size="1.79" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 65.5 55.55)">Q6</text>
 </g>
 <g class="part bot" data-ref="C20">
-<rect class="cy" x="47.52" y="58.7" width="1.45" height="2.7" />
+<rect class="cy" x="47.53" y="58.7" width="1.45" height="2.7" />
 <text class="des" x="48.25" y="60.05" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 48.25 60.05)">C20</text>
 </g>
 <g class="part bot" data-ref="C21">
-<rect class="cy" x="49.02" y="58.7" width="1.45" height="2.7" />
+<rect class="cy" x="49.03" y="58.7" width="1.45" height="2.7" />
 <text class="des" x="49.75" y="60.05" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 49.75 60.05)">C21</text>
 </g>
 <g class="part bot" data-ref="C22">
-<rect class="cy" x="50.52" y="58.7" width="1.45" height="2.7" />
+<rect class="cy" x="50.53" y="58.7" width="1.45" height="2.7" />
 <text class="des" x="51.25" y="60.05" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 51.25 60.05)">C22</text>
 </g>
 <g class="part bot" data-ref="C23">
-<rect class="cy" x="52.02" y="58.7" width="1.45" height="2.7" />
+<rect class="cy" x="52.03" y="58.7" width="1.45" height="2.7" />
 <text class="des" x="52.75" y="60.05" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 52.75 60.05)">C23</text>
 </g>
 <g class="part bot" data-ref="C24">
@@ -107,20 +111,20 @@
 <text class="des" x="67.75" y="44.9" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 67.75 44.9)">C27</text>
 </g>
 <g class="part bot" data-ref="U2">
-<rect class="cy" x="55.05" y="49.05" width="5.9" height="6.9" />
-<text class="des" x="58" y="52.5" font-size="2.71" dominant-baseline="central" text-anchor="middle">U2</text>
+<rect class="cy" x="54.55" y="37.55" width="6.9" height="5.9" />
+<text class="des" x="58" y="40.5" font-size="2.71" dominant-baseline="central" text-anchor="middle">U2</text>
 </g>
 <g class="part bot" data-ref="R4">
-<rect class="cy" x="56.65" y="46.67" width="2.7" height="1.45" />
-<text class="des" x="58" y="47.39" font-size="0.67" dominant-baseline="central" text-anchor="middle">R4</text>
+<rect class="cy" x="57.28" y="50.25" width="1.45" height="2.7" />
+<text class="des" x="58" y="51.6" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 58 51.6)">R4</text>
 </g>
 <g class="part bot" data-ref="D3">
-<rect class="cy" x="55.25" y="56.17" width="1.9" height="3.66" />
-<text class="des" x="56.2" y="58" font-size="0.87" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 56.2 58)">D3</text>
+<rect class="cy" x="52.77" y="47.65" width="3.66" height="1.9" />
+<text class="des" x="54.6" y="48.6" font-size="0.87" dominant-baseline="central" text-anchor="middle">D3</text>
 </g>
 <g class="part bot" data-ref="D4">
-<rect class="cy" x="58.85" y="56.17" width="1.9" height="3.66" />
-<text class="des" x="59.8" y="58" font-size="0.87" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 59.8 58)">D4</text>
+<rect class="cy" x="59.57" y="47.65" width="3.66" height="1.9" />
+<text class="des" x="61.4" y="48.6" font-size="0.87" dominant-baseline="central" text-anchor="middle">D4</text>
 </g>
 <g class="part bot" data-ref="D5">
 <rect class="cy" x="47.35" y="61.7" width="6.3" height="3" />
@@ -131,12 +135,12 @@
 <text class="des" x="50.5" y="66.4" font-size="1.38" dominant-baseline="central" text-anchor="middle">D6</text>
 </g>
 <g class="part bot" data-ref="D7">
-<rect class="cy" x="62.35" y="39.5" width="6.3" height="3" />
-<text class="des" x="65.5" y="41" font-size="1.38" dominant-baseline="central" text-anchor="middle">D7</text>
+<rect class="cy" x="57.55" y="55.45" width="3" height="6.3" />
+<text class="des" x="59.05" y="58.6" font-size="1.38" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 59.05 58.6)">D7</text>
 </g>
 <g class="part bot" data-ref="D8">
-<rect class="cy" x="62.35" y="36.3" width="6.3" height="3" />
-<text class="des" x="65.5" y="37.8" font-size="1.38" dominant-baseline="central" text-anchor="middle">D8</text>
+<rect class="cy" x="60.55" y="55.45" width="3" height="6.3" />
+<text class="des" x="62.05" y="58.6" font-size="1.38" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 62.05 58.6)">D8</text>
 </g>
 <g class="part bot" data-ref="C3">
 <rect class="cy" x="40.95" y="49.4" width="4.9" height="3.2" />
@@ -199,12 +203,8 @@
 <text class="des" x="84" y="54.5" font-size="2.3" dominant-baseline="central" text-anchor="middle">R3</text>
 </g>
 <g class="part bot" data-ref="R1">
-<rect class="cy" x="72.45" y="44" width="7.1" height="5" />
-<text class="des" x="76" y="46.5" font-size="2.3" dominant-baseline="central" text-anchor="middle">R1</text>
-</g>
-<g class="part bot" data-ref="R2">
-<rect class="cy" x="79.75" y="44" width="7.1" height="5" />
-<text class="des" x="83.3" y="46.5" font-size="2.3" dominant-baseline="central" text-anchor="middle">R2</text>
+<rect class="cy" x="82.25" y="39.8" width="10.92" height="10.41" />
+<text class="des" x="87.71" y="45" font-size="3" dominant-baseline="central" text-anchor="middle">R1</text>
 </g>
 <g class="part bot" data-ref="Q2">
 <rect class="cy" x="76.75" y="36.5" width="5.5" height="7" />
@@ -221,6 +221,146 @@
 <g class="part bot" data-ref="R6">
 <rect class="cy" x="74.07" y="35.15" width="1.45" height="2.7" />
 <text class="des" x="74.79" y="36.5" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 74.79 36.5)">R6</text>
+</g>
+<g class="part bot" data-ref="C38">
+<rect class="cy" x="53.55" y="46.18" width="2.7" height="1.45" />
+<text class="des" x="54.9" y="46.91" font-size="0.67" dominant-baseline="central" text-anchor="middle">C38</text>
+</g>
+<g class="part bot" data-ref="C39">
+<rect class="cy" x="59.75" y="46.17" width="2.7" height="1.45" />
+<text class="des" x="61.1" y="46.89" font-size="0.67" dominant-baseline="central" text-anchor="middle">C39</text>
+</g>
+<g class="part bot" data-ref="C36">
+<rect class="cy" x="56.53" y="46.65" width="1.45" height="2.7" />
+<text class="des" x="57.25" y="48" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 57.25 48)">C36</text>
+</g>
+<g class="part bot" data-ref="C37">
+<rect class="cy" x="58.03" y="46.65" width="1.45" height="2.7" />
+<text class="des" x="58.75" y="48" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 58.75 48)">C37</text>
+</g>
+<g class="part bot" data-ref="R22">
+<rect class="cy" x="62.88" y="34.35" width="1.45" height="2.7" />
+<text class="des" x="63.61" y="35.7" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 63.61 35.7)">R22</text>
+</g>
+<g class="part bot" data-ref="R23">
+<rect class="cy" x="63.07" y="36.92" width="1.06" height="1.96" />
+<text class="des" x="63.6" y="37.9" font-size="0.5" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 63.6 37.9)">R23</text>
+</g>
+<g class="part bot" data-ref="R16">
+<rect class="cy" x="53.37" y="36.52" width="1.06" height="1.96" />
+<text class="des" x="53.9" y="37.5" font-size="0.5" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 53.9 37.5)">R16</text>
+</g>
+<g class="part bot" data-ref="R17">
+<rect class="cy" x="59.72" y="35.37" width="1.06" height="1.96" />
+<text class="des" x="60.25" y="36.35" font-size="0.5" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 60.25 36.35)">R17</text>
+</g>
+<g class="part bot" data-ref="R18">
+<rect class="cy" x="61.07" y="36.07" width="1.06" height="1.96" />
+<text class="des" x="61.6" y="37.05" font-size="0.5" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 61.6 37.05)">R18</text>
+</g>
+<g class="part bot" data-ref="R13">
+<rect class="cy" x="52.22" y="40.12" width="1.96" height="1.06" />
+<text class="des" x="53.2" y="40.65" font-size="0.5" dominant-baseline="central" text-anchor="middle">R13</text>
+</g>
+<g class="part bot" data-ref="R14">
+<rect class="cy" x="53.37" y="38.27" width="1.06" height="1.96" />
+<text class="des" x="53.9" y="39.25" font-size="0.5" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 53.9 39.25)">R14</text>
+</g>
+<g class="part bot" data-ref="R15">
+<rect class="cy" x="51.32" y="38.22" width="1.96" height="1.06" />
+<text class="des" x="52.3" y="38.75" font-size="0.5" dominant-baseline="central" text-anchor="middle">R15</text>
+</g>
+<g class="part bot" data-ref="R19">
+<rect class="cy" x="61.57" y="33.82" width="1.06" height="1.96" />
+<text class="des" x="62.1" y="34.8" font-size="0.5" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 62.1 34.8)">R19</text>
+</g>
+<g class="part bot" data-ref="R20">
+<rect class="cy" x="60.47" y="33.82" width="1.06" height="1.96" />
+<text class="des" x="61" y="34.8" font-size="0.5" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 61 34.8)">R20</text>
+</g>
+<g class="part bot" data-ref="R21">
+<rect class="cy" x="52.62" y="31.17" width="1.96" height="1.06" />
+<text class="des" x="53.6" y="31.7" font-size="0.5" dominant-baseline="central" text-anchor="middle">R21</text>
+</g>
+<g class="part bot" data-ref="C29">
+<rect class="cy" x="50.88" y="40.15" width="1.45" height="2.7" />
+<text class="des" x="51.61" y="41.5" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 51.61 41.5)">C29</text>
+</g>
+<g class="part bot" data-ref="C30">
+<rect class="cy" x="50.88" y="43.05" width="1.45" height="2.7" />
+<text class="des" x="51.61" y="44.4" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 51.61 44.4)">C30</text>
+</g>
+<g class="part bot" data-ref="C33">
+<rect class="cy" x="52.68" y="41.65" width="1.45" height="2.7" />
+<text class="des" x="53.41" y="43" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 53.41 43)">C33</text>
+</g>
+<g class="part bot" data-ref="C31">
+<rect class="cy" x="64.85" y="41.27" width="2.7" height="1.45" />
+<text class="des" x="66.2" y="41.99" font-size="0.67" dominant-baseline="central" text-anchor="middle">C31</text>
+</g>
+<g class="part bot" data-ref="C32">
+<rect class="cy" x="64.85" y="39.37" width="2.7" height="1.45" />
+<text class="des" x="66.2" y="40.09" font-size="0.67" dominant-baseline="central" text-anchor="middle">C32</text>
+</g>
+<g class="part bot" data-ref="C34">
+<rect class="cy" x="61.55" y="40.47" width="2.7" height="1.45" />
+<text class="des" x="62.9" y="41.2" font-size="0.67" dominant-baseline="central" text-anchor="middle">C34</text>
+</g>
+<g class="part bot" data-ref="C35">
+<rect class="cy" x="48.4" y="38.05" width="2.2" height="4.9" />
+<text class="des" x="49.5" y="40.5" font-size="1.01" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 49.5 40.5)">C35</text>
+</g>
+<g class="part bot" data-ref="R12">
+<rect class="cy" x="83.04" y="32.47" width="1.06" height="1.96" />
+<text class="des" x="83.57" y="33.45" font-size="0.5" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 83.57 33.45)">R12</text>
+</g>
+<g class="part bot" data-ref="C28">
+<rect class="cy" x="84.15" y="32.26" width="2.7" height="1.45" />
+<text class="des" x="85.5" y="32.98" font-size="0.67" dominant-baseline="central" text-anchor="middle">C28</text>
+</g>
+<g class="part bot" data-ref="R8">
+<rect class="cy" x="87.82" y="33.22" width="1.96" height="1.06" />
+<text class="des" x="88.8" y="33.75" font-size="0.5" dominant-baseline="central" text-anchor="middle">R8</text>
+</g>
+<g class="part bot" data-ref="R9">
+<rect class="cy" x="89.27" y="34.52" width="1.06" height="1.96" />
+<text class="des" x="89.8" y="35.5" font-size="0.5" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 89.8 35.5)">R9</text>
+</g>
+<g class="part bot" data-ref="R10">
+<rect class="cy" x="89.52" y="36.77" width="1.06" height="1.96" />
+<text class="des" x="90.05" y="37.75" font-size="0.5" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 90.05 37.75)">R10</text>
+</g>
+<g class="part bot" data-ref="R40">
+<rect class="cy" x="84.27" y="38.72" width="1.96" height="1.06" />
+<text class="des" x="85.25" y="39.25" font-size="0.5" dominant-baseline="central" text-anchor="middle">R40</text>
+</g>
+<g class="part bot" data-ref="R41">
+<rect class="cy" x="82.27" y="38.72" width="1.96" height="1.06" />
+<text class="des" x="83.25" y="39.25" font-size="0.5" dominant-baseline="central" text-anchor="middle">R41</text>
+</g>
+<g class="part bot" data-ref="C65">
+<rect class="cy" x="90.87" y="36.95" width="1.45" height="2.7" />
+<text class="des" x="91.59" y="38.3" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 91.59 38.3)">C65</text>
+</g>
+<g class="part bot" data-ref="R43">
+<rect class="cy" x="51.27" y="16.05" width="1.45" height="2.7" />
+<text class="des" x="52" y="17.4" font-size="0.67" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 52 17.4)">R43</text>
+</g>
+<g class="part bot" data-ref="C40">
+<rect class="cy" x="10.1" y="47.27" width="2.7" height="1.45" />
+<text class="des" x="11.45" y="47.99" font-size="0.67" dominant-baseline="central" text-anchor="middle">C40</text>
+</g>
+<g class="part bot" data-ref="C45">
+<rect class="cy" x="12.8" y="51.48" width="3.7" height="1.94" />
+<text class="des" x="14.65" y="52.45" font-size="0.89" dominant-baseline="central" text-anchor="middle">C45</text>
+</g>
+<g class="part bot" data-ref="C47">
+<rect class="cy" x="14.75" y="49.18" width="3.7" height="1.94" />
+<text class="des" x="16.6" y="50.15" font-size="0.89" dominant-baseline="central" text-anchor="middle">C47</text>
+</g>
+<g class="part bot" data-ref="C53">
+<rect class="cy" x="72.18" y="41.42" width="1.04" height="1.96" />
+<text class="des" x="72.7" y="42.4" font-size="0.5" dominant-baseline="central" text-anchor="middle" transform="rotate(-90 72.7 42.4)">C53</text>
 </g>
 </g>
 </svg>

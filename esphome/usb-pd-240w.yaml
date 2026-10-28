@@ -4,8 +4,8 @@
 # The ESP32 is a monitor, not the power-path controller: the TPS26750A owns the
 # BQ25756 over its own I2C controller bus (multi-controller not supported there),
 # so everything here reads its own bus (INA228 x2, TPS26750A target port) and the
-# BQ25756 open-drain status pins. GPIO numbers follow docs/PLAN.md 5.4 and must be
-# re-checked against the schematic once it is captured.
+# BQ25756 open-drain status pins. GPIO numbers match the schematic (04_Monitor_MCU,
+# U9); the BQ25756 INT goes to the TPS26750A I2Cc_IRQ, not here.
 
 substitutions:
   name: usb-pd-240w
@@ -112,7 +112,8 @@ sensor:
     energy:
       name: "USB-C energy"
 
-  # Board NTCs (NTCS0603E3103FMT, 10k B3610) on ADC1, 10k pull-ups to 3V3
+  # Board NTCs (NTCS0603E3103FMT, 10k B3610) on ADC1, 10k pull-ups to 3V3:
+  # R4 (NTC1) on the GaN pedestal, R5 (NTC2) on L1, R6 (NTC3) beside Q1/Q2
   - platform: adc
     id: ntc_fet_v
     pin: GPIO0
@@ -143,6 +144,24 @@ sensor:
   - platform: ntc
     sensor: ntc_ind_r
     name: "Inductor temperature"
+    calibration:
+      b_constant: 3610
+      reference_temperature: 25°C
+      reference_resistance: 10kOhm
+
+  - platform: adc
+    id: ntc_bat_fet_v
+    pin: GPIO6
+    attenuation: 12db
+    update_interval: 5s
+  - platform: resistance
+    id: ntc_bat_fet_r
+    sensor: ntc_bat_fet_v
+    configuration: DOWNSTREAM
+    resistor: 10kOhm
+  - platform: ntc
+    sensor: ntc_bat_fet_r
+    name: "Battery FET temperature"
     calibration:
       b_constant: 3610
       reference_temperature: 25°C
@@ -194,19 +213,24 @@ binary_sensor:
     pin: { number: GPIO21, inverted: true, mode: { input: true } }
   - platform: gpio
     name: "Button"
-    # BOOT strap: the button only pulls low when pressed, so the pin is high at reset
+    # SW1 on the BOOT strap: R44 holds it high at reset, the button pulls it low
     pin: { number: GPIO9, inverted: true, mode: { input: true, pullup: true }, ignore_strapping_warning: true }
 
 switch:
-  # Drives BQ25756 CE high through a resistor: inhibits charging in hardware
-  # regardless of what the PD controller requests. Off (charging allowed) at boot.
+  # Drives BQ25756 CE high: inhibits charging in hardware regardless of what the PD
+  # controller requests. R21 (100k) holds CE low (charging allowed) while the ESP32 is
+  # off or in reset. Off (charging allowed) at boot.
   - platform: gpio
     name: "Inhibit battery charging"
     pin: GPIO14
     restore_mode: ALWAYS_OFF
 
 light:
-  - platform: status_led
+  # D13, an addressable RGB LED (IN-PI33TBTPRPGPB, WS2812 protocol) on +5V through D12
+  - platform: esp32_rmt_led_strip
+    id: status_rgb
     name: "Status LED"
-    # GPIO8 strap must be high at reset: the LED is wired to 3V3 (active low), which holds it high
-    pin: { number: GPIO8, inverted: true, ignore_strapping_warning: true }
+    pin: { number: GPIO8, ignore_strapping_warning: true }
+    chipset: WS2812
+    rgb_order: GRB
+    num_leds: 1
